@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        Tạo một Form cho người dùng đăng ký
+        các thuộc tính hay dùng trong input
+        type="text" : 
+        type="email" : bắt buộc khi nhập phải có @
+        type="date" : tạo ra 1 ô nhập gồm ngày tháng năm
+        type="time" : tạo giờ
+        type="color" chọn màu
+        type="checkbox" : hiển thị ô chọn
+        type="radio" : các ô input có giá trị thuộc tính name giống nhau thì chỉ có thể lựa chọn 1 cái
+        button: nút bấm để gửi dữ liệu lên server
+        action: địa chỉ nơi nhận dữ liệu
+        placeholder: gợi ý nhập
+        required: bắt buộc phải nhập dữ liệu
+        Disabled: che các element không tương tác được
+        Autocomplete ="on" : nếu để ="off" thì sẽ không hiển thị phần gợi ý nhập
+        regex : validate dữ liệu
+        id: dùng định danh cho Element
+    -->
+    <form action="">
+      <label for="username">Username</label>
+      <input id="username" placeholder="Mời nhập tên" /> <br />
+      <label for="Email">Email</label>
+      <input id="Email" required type="email" /> <br />
+      <label for="password">Password</label>
+      <input id="password" type="password" /> <br />
+      <label for="Confirm Password">Confirm Password</label>
+      <input id="Confirm Password" type="password" /><br />
+      <label for="date">date</label>
+      <input type="date" /> <br />
+      <label for="time">time</label>
+      <input type="time" /> <br />
+      <label for="">color</label>
+      <input type="color" /> <br />
+      <input type="checkbox" />
+      <input type="checkbox" /><br />
+      <label for="">Gender</label>
+      Male<input type="radio" name="gender" /> Female<input
+        type="radio"
+        name="gender"
+      /><br />
+      <select name="" id="">
+        <option value="">Hà Nội</option>
+        <option value="">HCM</option>
+        <option value="">Đà Nẵng</option>
+      </select> <br>
+      <textarea name="" id="" cols="20" rows="10"></textarea> <br>
+      <button disabled>Register</button> <br />
+    </form>
+  </body>
+</html>
